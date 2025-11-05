@@ -1,0 +1,84 @@
+Create a complete, fully responsive website for Sugar Cafe, a cozy and minimalist coffee shop, using HTML, CSS, JavaScript (frontend) and Node.js with Express (backend).
+
+🎨 Design Requirements
+
+Cozy + minimalist aesthetic
+
+Color palette: warm brown (#8B5E3C), beige (#F5EBDC), white (#FFFFFF), black (#000000), and subtle green accents (#B9C9A7)
+
+Clean layout with lots of white space and rounded corners
+
+Responsive on phones, tablets, and desktops
+
+🏠 Pages & Sections
+
+Home: Hero image, logo, tagline, and “Order Now” button
+
+About Us: Brief description of Sugar Cafe’s concept and story
+
+Menu: Placeholder categories for Coffee, Pastries, and Specials (editable later)
+
+Gallery: Placeholder images of drinks, cafe interior, and food
+
+Reviews: 3 sample customer reviews in card format
+
+Access / Location: Google Maps embed for
+B2 L49-B Nia Road, Woodsite I, Pasong Buaya II 4103 Imus, Philippines
+
+Contact: Form fields (name, email, message) and contact info
+
+🔗 Features
+
+Navigation bar and footer on all pages
+
+Contact form connected to backend route /contact (POST request)
+
+Online Order button linking to a placeholder page /order
+
+Social media buttons (Instagram, Facebook) in footer
+
+“News or Announcements” section with placeholder cards
+
+⚙️ Backend (Node.js + Express)
+
+Create server.js with Express routes for each page
+
+Serve static files from public/ directory
+
+Include routes/contact.js to handle form submissions
+
+Use nodemon for local development
+
+Store messages temporarily in a data/messages.json file (no database yet)
+
+🗂️ Folder Structure
+sugar-cafe/
+├── public/
+│   ├── css/
+│   │   └── style.css
+│   ├── js/
+│   │   └── script.js
+│   ├── images/
+│   │   └── (placeholders + logo.png)
+│   ├── index.html
+│   ├── about.html
+│   ├── menu.html
+│   ├── gallery.html
+│   ├── reviews.html
+│   ├── access.html
+│   └── contact.html
+├── routes/
+│   └── contact.js
+├── data/
+│   └── messages.json
+├── server.js
+├── package.json
+└── README.md
+
+🚀 Final Requirements
+
+Include comments explaining each section
+
+Make everything editable and well-organized
+
+Ensure it runs with npm install and npm start
