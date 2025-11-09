@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Coffee, Croissant, Sparkles } from "lucide-react";
+import { Breakfast, Sparkles } from "lucide-react";
 
 // Import menu item images
 import Taposilog from "@assets/generated_images/tapsilog.png";
@@ -22,9 +22,9 @@ import seasonalImg from "@assets/generated_images/Seasonal_coffee_brew_e26f3664.
 
 const menuCategories = [
   {
-    title: "Coffee",
-    icon: Coffee,
-    description: "Artisan brewed perfection",
+    title: "Silog Meals",
+    icon: Breakfast,
+    description: "Breakfast Meals",
     items: [
       { name: "Tapsilog", price: "₱110", image: Tapsilog },
       { name: "Tocilog", price: "₱110", image: Tocilog },
