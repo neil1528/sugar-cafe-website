@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import heroImage from "@assets/generated_images/Cozy_cafe_interior_hero_9faad71e.png";
-import logoImage from "@assets/generated_images/Sugar_Cafe_logo_a7b63b71.png";
+import logoImage from "@assets/generated_images/Sugar_Cafe_logo_a7b63b71.png"
 
 export default function Hero() {
   return (
@@ -17,13 +17,13 @@ export default function Hero() {
         <img
           src={logoImage}
           alt="Sugar Cafe Logo"
-          className="w-32 h-32 mx-auto mb-6 drop-shadow-2xl"
+          className="w-40 h-40 mx-auto mb-4 drop-shadow-2xl rounded-full"
         />
         <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 drop-shadow-lg">
-          Sugar Cafe
+          Sugar Cafe - Pasong Buaya II
         </h1>
         <p className="text-xl md:text-2xl text-white/90 mb-8 drop-shadow-lg">
-          Where every cup tells a story
+          Sweet comfort in every sip!
         </p>
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <Link href="/order">
