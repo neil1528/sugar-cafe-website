@@ -2,9 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Coffee, Croissant, Sparkles } from "lucide-react";
 
 // Import menu item images
-import espressoImg from "@assets/generated_images/Espresso_coffee_shot_abb9227a.png";
-import americanoImg from "@assets/generated_images/Americano_coffee_a94d6d23.png";
-import cappuccinoImg from "@assets/generated_images/Cappuccino_with_foam_8db4da50.png";
+import Taposilog from "@assets/generated_images/tapsilog.png";
+import Tocilog from "@assets/generated_images/tocilog.png";
 import latteImg from "@assets/generated_images/Latte_with_art_33097870.png";
 import mochaImg from "@assets/generated_images/Mocha_with_chocolate_2cf71e30.png";
 import coldBrewImg from "@assets/generated_images/Cold_brew_iced_32e82524.png";
@@ -27,8 +26,8 @@ const menuCategories = [
     icon: Coffee,
     description: "Artisan brewed perfection",
     items: [
-      { name: "Espresso", price: "₱120", image: espressoImg },
-      { name: "Americano", price: "₱140", image: americanoImg },
+      { name: "Tapsilog", price: "₱110", image: Tapsilog },
+      { name: "Tocilog", price: "₱110", image: Tocilog },
       { name: "Cappuccino", price: "₱160", image: cappuccinoImg },
       { name: "Latte", price: "₱160", image: latteImg },
       { name: "Mocha", price: "₱180", image: mochaImg },
