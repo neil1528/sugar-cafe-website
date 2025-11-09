@@ -153,8 +153,8 @@ export default function ContactForm() {
                     <div>
                       <h4 className="font-semibold mb-1">Location</h4>
                       <p className="text-sm text-muted-foreground">
-                        B2 L49-B Nia Road, Woodsite I<br />
-                        Pasong Buaya II 4103 Imus, Philippines
+                        Woodsite 1, LA's Commercial Bldg,<br />
+                        B2 L49-B Pasong Buaya, II, Imus, 4103 Cavite, Philippines
                       </p>
                     </div>
                   </div>
@@ -162,14 +162,14 @@ export default function ContactForm() {
                     <Phone className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold mb-1">Phone</h4>
-                      <p className="text-sm text-muted-foreground">(046) 123-4567</p>
+                      <p className="text-sm text-muted-foreground">+63 917 861 6400</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
                     <Mail className="h-5 w-5 text-primary mt-0.5 flex-shrink-0" />
                     <div>
                       <h4 className="font-semibold mb-1">Email</h4>
-                      <p className="text-sm text-muted-foreground">hello@sugarcafe.ph</p>
+                      <p className="text-sm text-muted-foreground">neilapostol124@gmail.com</p>
                     </div>
                   </div>
                   <div className="flex items-start gap-3">
@@ -177,8 +177,8 @@ export default function ContactForm() {
                     <div>
                       <h4 className="font-semibold mb-1">Hours</h4>
                       <p className="text-sm text-muted-foreground">
-                        Mon - Fri: 7:00 AM - 9:00 PM<br />
-                        Sat - Sun: 8:00 AM - 10:00 PM
+                        Mon - Fri: 10:00 AM - 10:00 PM<br />
+                        Sat - Sun: 10:00 AM - 10:00 PM
                       </p>
                     </div>
                   </div>
