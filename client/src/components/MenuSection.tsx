@@ -1,5 +1,25 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Coffee, Croissant, Sparkles } from "lucide-react";
+
+// Import menu item images
+import espressoImg from "@assets/generated_images/Espresso_coffee_shot_abb9227a.png";
+import americanoImg from "@assets/generated_images/Americano_coffee_a94d6d23.png";
+import cappuccinoImg from "@assets/generated_images/Cappuccino_with_foam_8db4da50.png";
+import latteImg from "@assets/generated_images/Latte_with_art_33097870.png";
+import mochaImg from "@assets/generated_images/Mocha_with_chocolate_2cf71e30.png";
+import coldBrewImg from "@assets/generated_images/Cold_brew_iced_32e82524.png";
+import croissantImg from "@assets/generated_images/Buttery_croissant_pastry_c7e70e95.png";
+import painAuChocolatImg from "@assets/generated_images/Chocolate_croissant_a77474d3.png";
+import cinnamonRollImg from "@assets/generated_images/Glazed_cinnamon_roll_2494dc15.png";
+import blueberryMuffinImg from "@assets/generated_images/Blueberry_muffin_7ac6e616.png";
+import bananaBreadImg from "@assets/generated_images/Banana_bread_slice_98973f5d.png";
+import sconeImg from "@assets/generated_images/Fresh_baked_scone_3cec4f52.png";
+import signatureLatteImg from "@assets/generated_images/Signature_sugar_latte_11965066.png";
+import matchaFrappeImg from "@assets/generated_images/Matcha_frappe_drink_fea4a41f.png";
+import caramelMacchiatoImg from "@assets/generated_images/Caramel_macchiato_e90586a9.png";
+import affogatoImg from "@assets/generated_images/Affogato_ice_cream_98f21bd9.png";
+import comboImg from "@assets/generated_images/Cafe_combo_meal_0a7727d3.png";
+import seasonalImg from "@assets/generated_images/Seasonal_coffee_brew_e26f3664.png";
 
 const menuCategories = [
   {
@@ -7,12 +27,12 @@ const menuCategories = [
     icon: Coffee,
     description: "Artisan brewed perfection",
     items: [
-      { name: "Espresso", price: "₱120" },
-      { name: "Americano", price: "₱140" },
-      { name: "Cappuccino", price: "₱160" },
-      { name: "Latte", price: "₱160" },
-      { name: "Mocha", price: "₱180" },
-      { name: "Cold Brew", price: "₱170" },
+      { name: "Espresso", price: "₱120", image: espressoImg },
+      { name: "Americano", price: "₱140", image: americanoImg },
+      { name: "Cappuccino", price: "₱160", image: cappuccinoImg },
+      { name: "Latte", price: "₱160", image: latteImg },
+      { name: "Mocha", price: "₱180", image: mochaImg },
+      { name: "Cold Brew", price: "₱170", image: coldBrewImg },
     ],
   },
   {
@@ -20,12 +40,12 @@ const menuCategories = [
     icon: Croissant,
     description: "Freshly baked daily",
     items: [
-      { name: "Croissant", price: "₱90" },
-      { name: "Pain au Chocolat", price: "₱110" },
-      { name: "Cinnamon Roll", price: "₱120" },
-      { name: "Blueberry Muffin", price: "₱100" },
-      { name: "Banana Bread", price: "₱95" },
-      { name: "Scone", price: "₱85" },
+      { name: "Croissant", price: "₱90", image: croissantImg },
+      { name: "Pain au Chocolat", price: "₱110", image: painAuChocolatImg },
+      { name: "Cinnamon Roll", price: "₱120", image: cinnamonRollImg },
+      { name: "Blueberry Muffin", price: "₱100", image: blueberryMuffinImg },
+      { name: "Banana Bread", price: "₱95", image: bananaBreadImg },
+      { name: "Scone", price: "₱85", image: sconeImg },
     ],
   },
   {
@@ -33,12 +53,12 @@ const menuCategories = [
     icon: Sparkles,
     description: "Chef's recommendations",
     items: [
-      { name: "Signature Sugar Latte", price: "₱190" },
-      { name: "Matcha Frappe", price: "₱200" },
-      { name: "Caramel Macchiato", price: "₱185" },
-      { name: "Affogato", price: "₱150" },
-      { name: "Cafe Special Combo", price: "₱250" },
-      { name: "Seasonal Brew", price: "₱180" },
+      { name: "Signature Sugar Latte", price: "₱190", image: signatureLatteImg },
+      { name: "Matcha Frappe", price: "₱200", image: matchaFrappeImg },
+      { name: "Caramel Macchiato", price: "₱185", image: caramelMacchiatoImg },
+      { name: "Affogato", price: "₱150", image: affogatoImg },
+      { name: "Cafe Special Combo", price: "₱250", image: comboImg },
+      { name: "Seasonal Brew", price: "₱180", image: seasonalImg },
     ],
   },
 ];
@@ -54,37 +74,44 @@ export default function MenuSection() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {menuCategories.map((category) => {
-            const Icon = category.icon;
-            return (
-              <Card key={category.title} className="hover-elevate" data-testid={`card-menu-${category.title.toLowerCase()}`}>
-                <CardHeader className="pb-4">
-                  <div className="flex items-center gap-3 mb-2">
-                    <div className="p-2 rounded-lg bg-primary/10">
-                      <Icon className="h-6 w-6 text-primary" />
+        {menuCategories.map((category) => {
+          const Icon = category.icon;
+          return (
+            <div key={category.title} className="mb-16 last:mb-0">
+              <div className="flex items-center gap-3 mb-8">
+                <div className="p-2 rounded-lg bg-primary/10">
+                  <Icon className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h3 className="font-serif text-3xl font-bold">{category.title}</h3>
+                  <p className="text-muted-foreground">{category.description}</p>
+                </div>
+              </div>
+
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
+                {category.items.map((item) => (
+                  <Card
+                    key={item.name}
+                    className="hover-elevate overflow-hidden group cursor-pointer"
+                    data-testid={`card-menu-item-${item.name.toLowerCase().replace(/\s+/g, '-')}`}
+                  >
+                    <div className="aspect-square overflow-hidden">
+                      <img
+                        src={item.image}
+                        alt={item.name}
+                        className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                      />
                     </div>
-                    <CardTitle className="font-serif text-2xl">{category.title}</CardTitle>
-                  </div>
-                  <CardDescription>{category.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-3">
-                    {category.items.map((item) => (
-                      <div
-                        key={item.name}
-                        className="flex justify-between items-center pb-2 border-b border-border last:border-0"
-                      >
-                        <span className="text-sm font-medium">{item.name}</span>
-                        <span className="text-sm font-semibold text-primary">{item.price}</span>
-                      </div>
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            );
-          })}
-        </div>
+                    <CardContent className="p-3">
+                      <h4 className="font-medium text-sm mb-1 line-clamp-2">{item.name}</h4>
+                      <p className="text-lg font-bold text-primary">{item.price}</p>
+                    </CardContent>
+                  </Card>
+                ))}
+              </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
