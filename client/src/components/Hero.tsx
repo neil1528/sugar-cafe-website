@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroImage from "@assets/generated_images/Cozy_cafe_interior_hero_9faad71e.png";
+import heroImage from "@assets/generated_images/Sugar_cafe_bg.png";
 import logoImage from "@assets/generated_images/Sugar_Cafe_logo_a7b63b71.png"
 
 export default function Hero() {
