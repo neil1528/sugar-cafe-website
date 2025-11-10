@@ -1,8 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { Breakfast, Sparkles } from "lucide-react";
-
+import { UtensilsCrossed, Sparkles } from "lucide-react";
 // Import menu item images
-import Taposilog from "@assets/generated_images/tapsilog.png";
+import Tapsilog from "@assets/generated_images/tapsilog.png";
 import Tocilog from "@assets/generated_images/tocilog.png";
 import latteImg from "@assets/generated_images/Latte_with_art_33097870.png";
 import mochaImg from "@assets/generated_images/Mocha_with_chocolate_2cf71e30.png";
@@ -23,7 +22,7 @@ import seasonalImg from "@assets/generated_images/Seasonal_coffee_brew_e26f3664.
 const menuCategories = [
   {
     title: "Silog Meals",
-    icon: Breakfast,
+    icon: UtensilsCrossed
     description: "Breakfast Meals",
     items: [
       { name: "Tapsilog", price: "₱110", image: Tapsilog },
