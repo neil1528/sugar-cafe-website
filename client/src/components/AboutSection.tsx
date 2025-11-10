@@ -1,6 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Coffee, Users } from "lucide-react";
-import seatingImage from "@assets/generated_images/Cafe_seating_area_bc8964cd.png";
+import seatingImage from "@assets/generated_images/Sugarcafeinterior4.png";
 
 const features = [
   {
