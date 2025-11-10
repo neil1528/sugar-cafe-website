@@ -27,7 +27,7 @@ const menuCategories = [
     items: [
       { name: "Tapsilog", price: "₱110", image: Tapsilog },
       { name: "Tocilog", price: "₱110", image: Tocilog },
-      { name: "Cappuccino", price: "₱160", image: Tocilog
+      { name: "Cappuccino", price: "₱160", image: Tocilog},
       { name: "Latte", price: "₱160", image: latteImg },
       { name: "Mocha", price: "₱180", image: mochaImg },
       { name: "Cold Brew", price: "₱170", image: coldBrewImg },
