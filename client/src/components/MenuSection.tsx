@@ -35,7 +35,7 @@ const menuCategories = [
   },
   {
     title: "Pastries",
-    icon: Coffee
+    icon: Coffee,
     description: "Freshly baked daily",
     items: [
       { name: "Croissant", price: "₱90", image: croissantImg },
